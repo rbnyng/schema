@@ -183,11 +183,31 @@ name: "percentile10"
 domainIncludes: dcs:StatVarObservation
 rangeIncludes: schema:Number
 
+Node: dcid:percentile25
+typeOf: schema:Property
+name: "percentile25"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: schema:Number
+
+Node: dcid:percentile50
+typeOf: schema:Property
+name: "percentile50"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: schema:Number
+
+Node: dcid:percentile75
+typeOf: schema:Property
+name: "percentile75"
+domainIncludes: dcs:StatVarObservation
+rangeIncludes: schema:Number
+
 Node: dcid:percentile90
 typeOf: schema:Property
 name: "percentile90"
 domainIncludes: dcs:StatVarObservation
 rangeIncludes: schema:Number
+
+
 
 Node: dcid:County
 name: "County"
@@ -2937,3 +2957,10 @@ typeOf: schema:Class
 subClassOf: schema:Intangible
 name: "StatVarPeerGroup"
 description: "Represents a group of StatisticalVariable nodes that are comparable peers."
+
+Node: dcid:percent
+name: "percent"
+typeOf: schema:Property
+domainIncludes: schema:StatisticalPopulation, dcs:Student
+rangeIncludes: schema:Number, dcs:Percent
+supersededBy: dcs:countRelative

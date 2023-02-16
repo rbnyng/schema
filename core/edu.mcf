@@ -1485,8 +1485,8 @@ domainIncludes: dcs:Person, dcs:Student
 rangeIncludes: schema:Number
 description: "Percentage of students who are no longer enrolled."
 
-Node: dcid:educationScore
-name: "educationScore"
+Node: dcid:assessmentScore
+name: "assessmentScore"
 typeOf: schema:Property
 domainIncludes: dcs:School, dcs:Student
 rangeIncludes: schema:Number
@@ -1721,20 +1721,20 @@ subClassOf: schema:Enumeration
 name: "LanguageLearnedEnum"
 description: "The language that is learned."
 
-Node: dcid:English
+Node: dcid:EnglishLearner
 typeOf: dcs:LanguageLearnedEnum
-name: "English"
+name: "English Learner"
 
-Node: dcid:OtherEnglish
+Node: dcid:OtherEnglishLearner
 typeOf: dcs:LanguageLearnedEnum
-name: "OtherEnglish"
-specializationOf: dcs:English
+name: "Other English Learner"
+specializationOf: dcs:EnglishLearner
 description: "English other than first language."
 
-Node: dcid:OnlyEnglish
+Node: dcid:OnlyEnglishLearner
 typeOf: dcs:LanguageLearnedEnum
-name: "OnlyEnglish"
-specializationOf: dcs:English
+name: "Only English Learner"
+specializationOf: dcs:EnglishLearner
 description: "English as the first language."
 
 Node: dcid:LanguageLearningAgeGroupEnum
@@ -2069,3 +2069,23 @@ name: "Suburb"
 Node: dcid:Rural
 typeOf: dcs:LocationClassificationEnum
 name: "Rural"
+
+Node: dcid:SchoolTypeEnum
+typeOf: schema:Class
+subClassOf: schema:Enumeration
+name: "SchoolTypeEnum"
+description: "Type of School Private/Public."
+
+Node: dcid:NCES_PublicSchool
+typeOf: dcs:SchoolTypeEnum
+name: "NCES Public School"
+
+Node: dcid:NCES_PrivateSchool
+typeOf: dcs:SchoolTypeEnum
+name: "NCES Private School"
+
+Node: dcid:schoolType
+typeOf: schema:Property
+domainIncludes: dcs:School, dcs:Student
+rangeIncludes: dcs:SchoolTypeEnum
+name: "schoolType"
