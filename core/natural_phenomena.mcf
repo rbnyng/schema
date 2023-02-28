@@ -6,6 +6,67 @@ subClassOf: schema:Landform
 description: "In hydrology, an oceanic basin may be anywhere on Earth that is covered by seawater but geologically ocean basins are large geologic basins that are below sea level."
 descriptionUrl: "https://en.wikipedia.org/wiki/Oceanic_basin"
 
+Node: dcid:oceanicBasin/WesternNorthPacific
+name: "WesternNorthPacific Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/SouthIndian
+name: "SouthIndian Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/SouthernPacific
+name: "SouthernPacific Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/EasternNorthPacific
+name: "EasternNorthPacific Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/NorthIndian
+name: "NorthIndian Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/SouthAtlantic
+name: "SouthAtlantic Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/NorthAtlantic
+name: "NorthAtlantic Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/CaribbeanSea
+name: "CaribbeanSea Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/GulfOfMexico
+name: "GulfOfMexico Oceanic Basin"
+typeOf: schema:OceanicBasin
+
+Node: dcid:oceanicBasin/WesternAustralia
+name: "WesternAustralia Oceanic Basin"
+typeOf: schema:OceanicBasin
+containedInPlace: dcid:oceanicBasin/SouthIndian
+
+Node: dcid:oceanicBasin/BayOfBengal
+name: "BayOfBengal Oceanic Basin"
+typeOf: schema:OceanicBasin
+containedInPlace: dcid:oceanicBasin/NorthIndian
+
+Node: dcid:oceanicBasin/EasternAustralia
+name: "EasternAustralia Oceanic Basin"
+typeOf: schema:OceanicBasin
+containedInPlace: dcid:oceanicBasin/SouthernPacific
+
+Node: dcid:oceanicBasin/ArabianSea
+name: "ArabianSea Oceanic Basin"
+typeOf: schema:OceanicBasin
+containedInPlace: dcid:oceanicBasin/NorthIndian
+
+Node: dcid:oceanicBasin/CentralPacific
+name: "CentralPacific Oceanic Basin"
+typeOf: schema:OceanicBasin
+containedInPlace: dcid:oceanicBasin/EasternNorthPacific
+
 Node: dcid:MeteorologicalEvent
 typeOf: schema:Class
 name: "MeteorologicalEvent"
